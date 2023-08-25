@@ -1,0 +1,19 @@
+<div class="post-details-container">
+    <p>Hello Post Details</p>
+  
+    <div *ngIf="post" class="post-card">
+      <h2 class="post-title">{{ post.title }}</h2>
+      <p class="post-body">{{ post.body }}</p>
+    </div>
+  
+    <div *ngIf="comments && comments.length > 0" class="comments-card">
+      <h3 class="comments-title">Comments:</h3>
+      <ul>
+        <li *ngFor="let comment of comments" class="comment-item">
+          <span class="comment-name">{{ comment.name }}</span>
+          <span class="comment-body">{{ comment.body }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

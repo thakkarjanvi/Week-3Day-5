@@ -1,0 +1,15 @@
+<p>blog works!</p>
+<h1>Blog</h1>
+<ul>
+  <li>Blog Post 1</li>
+  <li>Blog Post 2</li>
+  <li>Blog Post 3</li>
+</ul>
+
+<div class="blog-container">
+  <div class="blog-post" *ngFor="let post of blogPosts">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-body">{{ post.body }}</p>
+    <a [routerLink]="['/post', post.id]">Read More</a>
+  </div>
+</div>

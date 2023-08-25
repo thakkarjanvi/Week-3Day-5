@@ -1,0 +1,44 @@
+/* blog.component.css */
+
+/* Style for the container that holds all blog posts */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Add your desired background color here */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for individual blog posts */
+  .blog-post {
+    background-color: #F2BED1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .blog-post:hover {
+    transform: translateY(-5px); /* Lift the post slightly when hovering */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the box shadow for the lifted effect */
+  }
+  
+  /* Style for the blog post title */
+  .post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style for the blog post body */
+  .post-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
